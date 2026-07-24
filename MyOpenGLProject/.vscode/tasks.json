@@ -21,7 +21,7 @@
                 "shell32.lib",
                 "ucrt.lib",
                 "vcruntime.lib",
-                "msvcrt.lib"
+                "msvcrt.lib",
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

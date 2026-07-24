@@ -1,7 +1,9 @@
+#define STB_IMAGE_IMPLEMENTATION
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include "Shader_L.h"
 #include <iostream>
+#include "stb_image.h"
 
 
 
@@ -14,6 +16,7 @@ const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
 float xOffset = 0.5f;
+float setAlpha = 0.1f;
 
 int main(){
     glfwInit();
@@ -37,51 +40,89 @@ int main(){
         return -1;
     }
     Shader ourShader("3.3Shader_Class/3.3.Shader.vs","3.3Shader_Class/3.3.Shader.fs");
-   float vertices_Star[] = {
-    // 外顶点（大半径 0.5f）
-    0.0f,    0.5f,   0.0f,  1.0f, 0.0f, 0.0f,   // 0: 上 (红)
-    0.475f,  0.154f, 0.0f,  0.0f, 1.0f, 0.0f,   // 1: 右上 (绿)
-    0.294f, -0.404f, 0.0f,  0.0f, 0.0f, 1.0f,   // 2: 右下 (蓝)
-    -0.294f, -0.404f, 0.0f, 1.0f, 1.0f, 0.0f,   // 3: 左下 (黄)
-    -0.475f, 0.154f, 0.0f,  1.0f, 0.0f, 1.0f,   // 4: 左上 (紫)
+
+   float vertices_P[]={
+    0.0f, 0.5f, 0.0f, 1.5f, 1.5f, 0.0f,
+    -0.5f, -0.25f, 0.0f, 0.0f, 1.5f, 1.5f,
+    0.5f, -0.25f, 0.0f, 1.5f, 0.0f, 1.5f,
+   };
     
-    // 内顶点（小半径 0.2f）
-    0.0f,    0.2f,   0.0f,  1.0f, 1.0f, 1.0f,   // 5: 内上 (白)
-    0.19f,   0.062f, 0.0f,  1.0f, 1.0f, 1.0f,   // 6: 内右上 (白)
-    0.118f, -0.162f, 0.0f,  1.0f, 1.0f, 1.0f,   // 7: 内右下 (白)
-    -0.118f, -0.162f, 0.0f, 1.0f, 1.0f, 1.0f,   // 8: 内左下 (白)
-    -0.19f,  0.062f, 0.0f,  1.0f, 1.0f, 1.0f,   // 9: 内左上 (白)
-};
-
-// 画五角星的10个三角形
-unsigned int Star[] = {
-    // 5个外三角形
-    0, 5, 9,
-    1, 6, 5,
-    2, 7, 6,
-    3, 8, 7,
-    4, 9, 8,
-    // 5个内三角形
-    5, 6, 9,
-    6, 7, 9,
-    7, 8, 9,
-    5, 9, 7,
-};
-
+    float vertices_T[]={
+    0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
+     0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // 右下
+    -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // 左下
+    -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // 左上
+    };
+    unsigned int indices[]={
+        0,1,3,
+        1,2,3,
+    };
     unsigned int  EBO,VAO,VBO;
+
     glGenBuffers(1, &VBO);
     glGenVertexArrays(1, &VAO);
-    glBindVertexArray(VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices_Star), vertices_Star, GL_STATIC_DRAW);
     glGenBuffers(1, &EBO);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(Star), Star, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+
+    glBindVertexArray(VAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices_T), vertices_T, GL_STATIC_DRAW);
+     
+     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
+
+     unsigned int texture1, texture2 ;
+    glGenTextures(1, &texture1);
+    glBindTexture(GL_TEXTURE_2D, texture1);
+    float borderColor[]={1.0f,1.0f,0.0f,1.0f};
+    glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR,borderColor);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_BORDER);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_BORDER);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+    int width,height,channels;
+    stbi_set_flip_vertically_on_load(true);
+    unsigned char* ImgData= stbi_load("TestImg.jpg",&width,&height,&channels,0);
+     if (ImgData)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, ImgData);
+        glGenerateMipmap(GL_TEXTURE_2D);
+        std::cout << "Texture loaded successfully" << std::endl;
+    }
+    else
+    {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(ImgData);
+
+    glGenTextures(1, &texture2);
+    glBindTexture(GL_TEXTURE_2D, texture2);
+    ImgData=stbi_load("awesomeface.png",&width,&height,&channels,0);
+     if (ImgData)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, ImgData);
+        glGenerateMipmap(GL_TEXTURE_2D);
+        std::cout << "Texture loaded successfully" << std::endl;
+    }
+    else
+    {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(ImgData);
+    
+    ourShader.use();
+    glUniform1i(glGetUniformLocation(ourShader.ID,"Texture1"),0);
+    ourShader.setInt("Texture2",1);
    
     while (!glfwWindowShouldClose(window))
     {
@@ -96,10 +137,17 @@ unsigned int Star[] = {
         //glClear(GL_DEPTH_BUFFER_BIT);
         //清除模板缓冲区
         //glClear(GL_STENCIL_BUFFER_BIT);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D,texture1);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D,texture2);
+        ourShader.setFloat("setAlpha",setAlpha);
         ourShader.use();
-        ourShader.setFloat("xOffset",xOffset);
+        
         glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, 30, GL_UNSIGNED_INT, 0);  
+        //glDrawArrays(GL_TRIANGLES, 0, 3);
+        //glDrawElements(GL_TRIANGLES, 30, GL_UNSIGNED_INT, 0);  
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         // 检查并调用事件，交换缓冲
         glfwSwapBuffers(window);
         glfwPollEvents();
@@ -107,8 +155,10 @@ unsigned int Star[] = {
     }
 
     glDeleteVertexArrays(1, &VAO);
+    glDeleteBuffers(1, &VBO);
     glDeleteBuffers(1, &EBO);
     glDeleteProgram(ourShader.ID);
+    
 
 
     glfwTerminate();
@@ -120,7 +170,19 @@ void processInput(GLFWwindow* window){
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
         glfwSetWindowShouldClose(window, true);
     }
-
+    
+    if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+    {
+        setAlpha += 0.001f; // change this value accordingly (might be too slow or too fast based on system hardware)
+        if(setAlpha >= 1.0f)
+            setAlpha = 1.0f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+    {
+        setAlpha -= 0.001f; // change this value accordingly (might be too slow or too fast based on system hardware)
+        if (setAlpha <= 0.0f)
+            setAlpha = 0.0f;
+    }
 }
 //窗口大小改变回调函数
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){
