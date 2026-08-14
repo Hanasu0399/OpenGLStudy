@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\EDY\Desktop\MyOpenGLProject\Lesson1.cpp">
+    <ClCompile Include="C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\Lesson1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\EDY\Desktop\MyOpenGLProject\glad.c">
+    <ClCompile Include="C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\EDY\Desktop\MyOpenGLProject\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{AFF438C2-CBB4-3335-87CB-A03F66D23318}</UniqueIdentifier>
+      <UniqueIdentifier>{402B57B0-30E4-3DFA-A9F3-EC51EBC29033}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
-^C:\USERS\EDY\DESKTOP\MYOPENGLPROJECT\BUILD\CMAKEFILES\5FDC60D68BD8A68CDCEF5DBE5A1FB674\GENERATE.STAMP.RULE
+^C:\USERS\EDY\DESKTOP\OPENGL\OPENGLSTUDY\MYOPENGLPROJECT\BUILD\CMAKEFILES\E4F84126FEBA08F5B9AD4615ECF78813\GENERATE.STAMP.RULE
 setlocal
-G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/MyOpenGLProject -BC:/Users/EDY/Desktop/MyOpenGLProject/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/EDY/Desktop/MyOpenGLProject/build/MyOpenGLApp.slnx
+G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject -BC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/MyOpenGLApp.slnx
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

@@ -1,9 +1,9 @@
 # CMake generation dependency list for this directory.
-C:/Users/EDY/Desktop/MyOpenGLProject/CMakeLists.txt
-C:/Users/EDY/Desktop/MyOpenGLProject/build/CMakeFiles/4.4.0/CMakeCCompiler.cmake
-C:/Users/EDY/Desktop/MyOpenGLProject/build/CMakeFiles/4.4.0/CMakeCXXCompiler.cmake
-C:/Users/EDY/Desktop/MyOpenGLProject/build/CMakeFiles/4.4.0/CMakeRCCompiler.cmake
-C:/Users/EDY/Desktop/MyOpenGLProject/build/CMakeFiles/4.4.0/CMakeSystem.cmake
+C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/CMakeLists.txt
+C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/CMakeFiles/4.4.0/CMakeCCompiler.cmake
+C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/CMakeFiles/4.4.0/CMakeCXXCompiler.cmake
+C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/CMakeFiles/4.4.0/CMakeRCCompiler.cmake
+C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/CMakeFiles/4.4.0/CMakeSystem.cmake
 G:/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake
 G:/CMake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake
 G:/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake

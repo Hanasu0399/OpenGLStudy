@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试 OpenGL 项目 (Lesson1.cpp)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}\\MyOpenGLProject\\build\\Debug\\MyOpenGLApp.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}\\MyOpenGLProject",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "cmake 构建"
+        }
+    ]
+}

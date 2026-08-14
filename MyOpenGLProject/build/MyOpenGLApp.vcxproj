@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C1018116-69F4-37A4-90C6-528CAFF853C1}</ProjectGuid>
+    <ProjectGuid>{CEEC7209-E945-3DFE-8470-ED36BD3270D3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MyOpenGLApp.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MyOpenGLApp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MyOpenGLApp.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MyOpenGLApp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MyOpenGLApp.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MyOpenGLApp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MyOpenGLApp.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MyOpenGLApp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -112,10 +112,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -124,15 +124,15 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/EDY/Desktop/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022;C:/Users/EDY/Desktop/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022;C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/EDY/Desktop/MyOpenGLProject/build/Debug/MyOpenGLApp.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/Debug/MyOpenGLApp.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/EDY/Desktop/MyOpenGLProject/build/Debug/MyOpenGLApp.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/Debug/MyOpenGLApp.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -169,10 +169,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -181,15 +181,15 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/EDY/Desktop/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022;C:/Users/EDY/Desktop/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022;C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/EDY/Desktop/MyOpenGLProject/build/Release/MyOpenGLApp.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/Release/MyOpenGLApp.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/EDY/Desktop/MyOpenGLProject/build/Release/MyOpenGLApp.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/Release/MyOpenGLApp.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -199,7 +199,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -226,10 +226,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -238,15 +238,15 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/EDY/Desktop/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022;C:/Users/EDY/Desktop/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022;C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/EDY/Desktop/MyOpenGLProject/build/MinSizeRel/MyOpenGLApp.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/MinSizeRel/MyOpenGLApp.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/EDY/Desktop/MyOpenGLProject/build/MinSizeRel/MyOpenGLApp.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/MinSizeRel/MyOpenGLApp.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -256,7 +256,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -282,10 +282,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glfw-3.4.bin.WIN64\include;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -294,15 +294,15 @@
     </Midl>
     <Link>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;gdi32.lib;user32.lib;shell32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/EDY/Desktop/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022;C:/Users/EDY/Desktop/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022;C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/glfw-3.4.bin.WIN64/lib-vc2022/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/EDY/Desktop/MyOpenGLProject/build/RelWithDebInfo/MyOpenGLApp.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/RelWithDebInfo/MyOpenGLApp.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/EDY/Desktop/MyOpenGLProject/build/RelWithDebInfo/MyOpenGLApp.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/RelWithDebInfo/MyOpenGLApp.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -311,11 +311,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\EDY\Desktop\MyOpenGLProject\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/EDY/Desktop/MyOpenGLProject/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/MyOpenGLProject -BC:/Users/EDY/Desktop/MyOpenGLProject/build --check-stamp-file C:/Users/EDY/Desktop/MyOpenGLProject/build/CMakeFiles/generate.stamp
+G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject -BC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build --check-stamp-file C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -323,12 +323,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/EDY/Desktop/MyOpenGLProject/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/MyOpenGLProject -BC:/Users/EDY/Desktop/MyOpenGLProject/build --check-stamp-file C:/Users/EDY/Desktop/MyOpenGLProject/build/CMakeFiles/generate.stamp
+G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject -BC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build --check-stamp-file C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -336,12 +336,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/EDY/Desktop/MyOpenGLProject/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/MyOpenGLProject -BC:/Users/EDY/Desktop/MyOpenGLProject/build --check-stamp-file C:/Users/EDY/Desktop/MyOpenGLProject/build/CMakeFiles/generate.stamp
+G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject -BC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build --check-stamp-file C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -349,12 +349,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/EDY/Desktop/MyOpenGLProject/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/MyOpenGLProject -BC:/Users/EDY/Desktop/MyOpenGLProject/build --check-stamp-file C:/Users/EDY/Desktop/MyOpenGLProject/build/CMakeFiles/generate.stamp
+G:\CMake\bin\cmake.exe -SC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject -BC:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build --check-stamp-file C:/Users/EDY/Desktop/OpenGL/OpenGLStudy/MyOpenGLProject/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -362,19 +362,19 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\EDY\Desktop\MyOpenGLProject\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\4.4.0\CMakeSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;G:\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;G:\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\EDY\Desktop\MyOpenGLProject\Lesson1.cpp" />
-    <ClCompile Include="C:\Users\EDY\Desktop\MyOpenGLProject\glad.c" />
+    <ClCompile Include="C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\Lesson1.cpp" />
+    <ClCompile Include="C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\glad.c" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\EDY\Desktop\MyOpenGLProject\build\ZERO_CHECK.vcxproj">
-      <Project>{A6C3D99C-BCF2-34F4-985B-E7C183F8646B}</Project>
+    <ProjectReference Include="C:\Users\EDY\Desktop\OpenGL\OpenGLStudy\MyOpenGLProject\build\ZERO_CHECK.vcxproj">
+      <Project>{831ACCFB-1596-39C4-8BA3-B36521AF52E8}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
