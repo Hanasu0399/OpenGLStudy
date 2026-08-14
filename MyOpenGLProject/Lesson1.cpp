@@ -208,3 +208,5 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height){
     glViewport(0, 0, width, height);
 }
 
+
+//https://www.realtimerendering.com/这个网站有很多教程
